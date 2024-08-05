@@ -41,3 +41,15 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.calltoaction {
+  background-color: #154754;
+  -webkit-text-fill-color: #89b999;
+  -webkit-text-stroke: 0.5px rgb(94, 10, 75);
+  height: 15vh;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
