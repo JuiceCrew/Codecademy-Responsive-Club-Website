@@ -56,6 +56,12 @@ a {
 
 .thumbnail {
   width: 30vw;
+  height: 20vw;
+}
+
+.sentrybox {
+  width: 70vw;
+  height: 40vw;
 }
 
 .content {
@@ -69,7 +75,8 @@ a {
   gap: 10vw;
   font-size: 2em;
   -webkit-text-fill-color: #89b999;
-  -webkit-text-stroke: 0.5px rgb(94, 10, 75)
+  -webkit-text-stroke: 0.5px rgb(94, 10, 75);
+  max-height: 35vw;
 }
 
 .reverse {
@@ -81,4 +88,19 @@ a {
   font-size: 4em;
   -webkit-text-fill-color: rgb(94, 10, 75);
   -webkit-text-stroke: 2px #89b999;
+}
+
+.location {
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: #154754;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2vw;
+  font-size: 3em;
+  -webkit-text-fill-color: rgb(94, 10, 75);
+  -webkit-text-stroke: 1px #89b999;
 }
