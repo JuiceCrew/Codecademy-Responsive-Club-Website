@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   outline: 1px solid red;
+  box-sizing: border-box;
 }
 
 .container {
@@ -18,7 +19,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 10%;
 }
 
 a {
@@ -29,19 +30,25 @@ a {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-align: center;
   color: #f9f9f9;
   font-size: 2em;
   -webkit-text-fill-color: #89b999;
   -webkit-text-stroke: 2px rgb(94, 10, 75);
+  max-width: 100%;
+  max-height: 40em;
 }
 
 .logo-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .logo-title {
@@ -55,7 +62,7 @@ a {
   background-color: #154754;
   -webkit-text-fill-color: #89b999;
   -webkit-text-stroke: 0.5px rgb(94, 10, 75);
-  height: 15vh;
+  min-height: 5em;
   font-size: 2em;
   display: flex;
   justify-content: center;
@@ -71,27 +78,32 @@ a {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  gap: 10vw;
   font-size: 2em;
   -webkit-text-fill-color: #89b999;
   -webkit-text-stroke: 0.5px rgb(94, 10, 75);
-  height: 30vh;
+  max-height: 30%;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-.content h2,
-.reverse h2 {
-  font-size: 4em;
+.content h2 {
+  font-size: 3.8em;
   -webkit-text-fill-color: rgb(94, 10, 75);
   -webkit-text-stroke: 2px #89b999;
+  width: 25%;
 }
 
 .content img {
   width: 25%;
-  height: 100%;
+  height: 80%;
+}
+
+.content p {
+  width: 25%;
 }
 
 .location {
@@ -103,18 +115,17 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 2vw;
   font-size: 3em;
   -webkit-text-fill-color: rgb(94, 10, 75);
   -webkit-text-stroke: 1px #89b999;
+  gap: 1em;
 }
 
 .location img { 
-  width: 60vw;
-  height: 70vh;
+  width: 60%;
 }
 
-/*xs*/
+/*xs mobile s*/
 @media (min-width: 320px) and (max-width: 374px) {
   
   html, body {
@@ -130,7 +141,7 @@ a {
   }
 }
 
-/*sm*/
+/*sm mobile m*/
 @media (min-width: 375px) and (max-width: 424px) {
   
   html, body {
@@ -146,7 +157,7 @@ a {
   }
 }
 
-/*md*/
+/*md mobile l*/
 @media (min-width: 425px) and (max-width: 767px) {
   
   html, body {
@@ -159,10 +170,43 @@ a {
   
   .container {
     max-width: 767px;
+    max-height: 20em;
+  }
+
+  .calltoaction {
+    max-width: 767px;
+    max-height: 10em;
+    margin: 5% 0%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .content p {
+    font-size: 0.4em;
+    width: 65%;
+  }
+
+  .content h2 {
+    font-size: 2em;
+    -webkit-text-stroke: 0.8px #89b999;
+    width: 75%;
+  }
+
+  .location h2 {
+    font-size: 1.35em;
+    -webkit-text-stroke: 0.8px #89b999;
+  }
+
+  .content img {
+    width: 50%;
+    height: 25%;
   }
 }
 
-/*lg*/
+/*lg tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
   html, body {
@@ -176,9 +220,19 @@ a {
   .container {
     max-width: 1023px;
   }
+
+  .content p {
+    font-size: 0.5em;
+  }
+
+  .content h2,
+  .location h2 {
+    font-size: 1.25em;
+    -webkit-text-stroke: 0.8px #89b999;
+  }
 }
 
-/*xl*/
+/*xl laptop*/
 @media (min-width: 1024px) and (max-width: 1439px) {
   
   html, body {
@@ -192,9 +246,19 @@ a {
   .container {
     max-width: 1439px;
   }
+
+  .content p {
+    font-size: 0.75em;
+  }
+
+  .content h2,
+  .location h2 {
+    font-size: 1.6em;
+    -webkit-text-stroke: 0.80px #89b999;
+  }
 }
 
-/*2xl*/
+/*2xl laptop l*/
 @media (min-width: 1440px) and (max-width: 2559px) {
 
   html, body {
@@ -207,6 +271,16 @@ a {
 
   .container {
     max-width: 2559px;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .content h2,
+  .location h2 {
+    font-size: 2.25em;
+    -webkit-text-stroke: 0.85px #89b999;
   }
 }
 
