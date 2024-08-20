@@ -35,6 +35,7 @@ a {
 
 .logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -42,24 +43,14 @@ a {
   color: #f9f9f9;
   font-size: 2em;
   -webkit-text-fill-color: #89b999;
-  -webkit-text-stroke: 2px rgb(94, 10, 75);
+  -webkit-text-stroke: 0.5px rgb(94, 10, 75);
+  background-color: #154754;
+  margin: 5% 0%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   max-width: 100%;
   max-height: 40em;
-}
-
-.logo-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.logo-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-width: 0;
 }
 
 .calltoaction {
@@ -72,6 +63,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 5% 0%;
 }
 
 .content {
@@ -139,9 +131,47 @@ a {
     padding: 0;
     overflow-x: hidden;
   }
+
+  .logo h1 {
+    font-size: 1.5em;
+  }
   
   .container {
     max-width: 374px;
+    max-height: 20em;
+  }
+
+  .calltoaction {
+    max-width: 424px;
+    max-height: 10em;
+    margin: 5% 0%;
+    font-size: 1.5em;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .content p {
+    font-size: 0.6em;
+    width: 65%;
+  }
+
+  .content h2 {
+    font-size: 1.35em;
+    -webkit-text-stroke: 0.8px #89b999;
+    width: 75%;
+  }
+
+  .content img {
+    width: 50%;
+    height: 40%;
+  }
+
+  .location h2 {
+    font-size: 1.1em;
+    -webkit-text-stroke: 0.8px #89b999;
   }
 }
 
@@ -158,6 +188,40 @@ a {
   
   .container {
     max-width: 424px;
+    max-height: 20em;
+  }
+
+  .calltoaction {
+    max-width: 424px;
+    max-height: 10em;
+    margin: 5% 0%;
+    font-size: 1.5em;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .content p {
+    font-size: 0.6em;
+    width: 65%;
+  }
+
+  .content h2 {
+    font-size: 1.75em;
+    -webkit-text-stroke: 0.8px #89b999;
+    width: 75%;
+  }
+
+  .content img {
+    width: 50%;
+    height: 20%;
+  }
+
+  .location h2 {
+    font-size: 1.25em;
+    -webkit-text-stroke: 0.8px #89b999;
   }
 }
 
@@ -180,7 +244,7 @@ a {
   .calltoaction {
     max-width: 767px;
     max-height: 10em;
-    margin: 22% 0% 5% 0%;
+    margin: 5% 0%;
     font-size: 1.5em;
   }
 
@@ -190,7 +254,7 @@ a {
   }
 
   .content p {
-    font-size: 0.4em;
+    font-size: 0.75em;
     width: 65%;
   }
 
